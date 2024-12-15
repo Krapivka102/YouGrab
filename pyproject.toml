@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "yougrab"
+version = "0.1.0"
+description = ""
+authors = ["kazakovN <krapifka102@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.4"
+djangorestframework = "^3.15.2"
+yt-dlp = "^2024.12.13"
+celery = {extras = ["redis"], version = "^5.4.0"}
+redis = "^5.2.1"
+python-decouple = "^3.8"
+requests = "^2.32.3"
+pillow = "^11.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
